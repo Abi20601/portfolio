@@ -130,14 +130,14 @@ html {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: #ff2800;
+    background: black;
 }
 
 
 /* Handle on hover */
 
  ::-webkit-scrollbar-thumb:hover {
-    background: #ff2800;
+    background: black;
 }
 
 
@@ -196,8 +196,12 @@ body::before {
 
 .awscloud {
     font-size: 15px;
-    background-color: #ff2800;
+    background-color: rgba(248, 244, 244, 0.5); /* 50% transparent black */
+    color: whitesmoke;
     margin-top: 5%;
+    border-radius: 10px; /* optional: rounded corners */
+    padding: 20px;       /* optional: space inside the box */
+    box-shadow: 0 4px 16px rgba(243, 241, 241, 0.2); /* optional: soft shadow */
 }
 
 @media (min-width: 1024px) {
@@ -298,7 +302,7 @@ h6 {
 
 #header .social {
     display: inline-block;
-    margin-top: 225px;
+    margin-top: 25px;
     padding: 0 30px;
     align-items: center;
 }
@@ -818,10 +822,36 @@ a.button4:hover {
 .counts .count-box:hover {
     transform: scale(1.1);
 }
+/* 
+#experience .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Adjust as needed */
+} */
 
+/* Center the experience card */
+.experience-item {
+    background: rgba(0,0,0,0.5); /* Optional: translucent background */
+    border-radius: 16px;         /* Optional: rounded corners */
+    padding: 32px 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15); /* Optional: subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* Center content horizontally */
+    text-align: center;          /* Center text */
+    max-width: 350px;            /* Optional: limit width */
+    margin: 24px 0;
+}
 
-
-
+.experience-item img {
+    display: block;
+    margin: 24px auto 0 auto; /* Top margin for spacing, auto for horizontal center */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;       /* Optional: rounded image corners */
+}
 
 
 
@@ -1442,7 +1472,7 @@ a.button4:hover {
 }
 
 .light-mode .projects-social:hover {
-    color: #ff2800;
+    color: #55286F;
     transform: scale(1.05);
 }
 
@@ -1641,7 +1671,7 @@ a.button4:hover {
 
 .light-mode li.nav-item a.nav-link::after {
     height: 4px;
-    background-color: #ff2800;
+    background-color: #55286F;
 }
 
 .light-mode .project-blog-headings {
@@ -1678,7 +1708,7 @@ a.button4:hover {
 @media (max-width: 568px) {
     .awscloud {
         font-size: 13px;
-        background-color: #ff2800;
+        background-color: #55286F;
         margin-top: 15%;
     }
     .light-mode::before {
@@ -1722,6 +1752,6 @@ a.button4:hover {
         left: 20px;
     }
     .up {
-        border-bottom: 0.2em solid #ff2800;
+        border-bottom: 0.2em solid #55286F;
     }
 }

@@ -34,6 +34,112 @@
   ======================================================== -->
     
 
+  <style>
+    /* --- Paste the provided CSS here --- */
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #181818;
+        background-image: url('../img/your-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+    }
+    #portfolio-details .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        background: rgba(20, 20, 20, 0.85);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        padding: 40px 32px;
+        max-width: 1100px;
+        width: 100%;
+        margin: 40px 0;
+    }
+    #portfolio-details .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 32px;
+    }
+    .col-lg-7, .col-lg-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .col-lg-7 {
+        flex: 2;
+        align-items: center;
+        text-align: center;
+    }
+    .col-lg-5 {
+        flex: 1.3;
+        background: rgba(255,255,255,0.04);
+        border-radius: 12px;
+        padding: 24px 20px;
+        color: #fff;
+        margin-left: 16px;
+    }
+    .portfolio-title {
+        color: #fff;
+        margin-bottom: 24px;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .portfolio-details-slider img {
+        width: 100%;
+        max-width: 380px;
+        border-radius: 10px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+        margin: 0 auto 14px auto;
+        display: block;
+    }
+    .portfolio-info h3 {
+        color: #ffeb3b;
+        font-size: 1.4rem;
+        margin-bottom: 14px;
+    }
+    .portfolio-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 18px 0;
+    }
+    .portfolio-info li {
+        margin-bottom: 8px;
+        color: #e0e0e0;
+    }
+    .portfolio-info a {
+        color: #4fc3f7;
+        text-decoration: underline;
+        word-break: break-all;
+    }
+    .portfolio-info strong {
+        color: #fff176;
+    }
+    @media (max-width: 900px) {
+        #portfolio-details .container, #portfolio-details .row {
+            flex-direction: column;
+            align-items: center;
+            padding: 16px 6px;
+        }
+        .col-lg-5 {
+            margin-left: 0;
+            margin-top: 28px;
+        }
+        .portfolio-details-slider img {
+            max-width: 90vw;
+        }
+    }
+  </style>
+
+
+
+
 </head>
 
 <body>
@@ -53,19 +159,11 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="../img/portfolio/climate.png" alt="">
+                  <img src="../img/portfolio/pres1.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="../img/projects/climate1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="../img/projects/climate2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="../img/projects/climate3.jpg" alt="">
+                  <img src="../img/portfolio/pres2.png" alt="">
                 </div>
 
               </div>
@@ -80,15 +178,15 @@
               <li><strong>Category</strong>: Web Application</li>
               <li><strong>Tech Stack</strong>: Nodejs, EJS, CSS</li>
               <li><strong>Project date</strong>: April 2022 - May 2022 </li>
-              <li><strong>Project URL</strong>: <a href="https://github.com/coderSuren/climateview" target="_blank">github.com/coderSuren/climateview</a></li>
-              <li><strong>Website</strong>: <a href="https://climate-z26h.onrender.com/" target="_blank">ClimateView</a></li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/Abi20601/Presidio_Assignment" target="_blank">github.com/Abi20601/Presidio_Assignment</a></li>
+              <li><strong>Website</strong>: <a href="https://presidio-assignment-indol.vercel.app/login" target="_blank">Schedule Manager</a></li>
             </ul>
             
             <strong>Project Description</strong>:
             <ul style="margin-left: 20px; list-style-type:disc">
-            <li>A Web Application which forecasts live weather of cities and countries across the Globe</li>
-              <li>Built using ElectronJs on Node RTE.  EJS is used for templating</li>
-              <li>Used OpenWeather API for displaying live weather data</li>
+            <li>A Web Application which forecasts live schedule of periods and sessions</li>
+              <li>Built using on Node JS.  EJS is used for templating</li>
+              <li>Used FireBase for storing information and NoSQL in Firebase</li>
             </ul>
           </div>
 

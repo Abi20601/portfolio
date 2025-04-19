@@ -1,9 +1,12 @@
 body {
-    font-family: regular, 'Open Sans', sans-serif;
-    color: #fff;
+    font-family: 'Open Sans', sans-serif; /* Removed invalid 'regular' */
+    font-weight: 400; /* Regular font weight */
+    color: #070707;
     position: relative;
     background-image: url("./backg1.jpg");
-    background: transparent;
+    background-repeat: no-repeat; /* Optional: prevent image repeating */
+    background-size: cover; /* Optional: cover entire background */
+    background-position: center center; /* Optional: center the image */
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abishek M</title>
     <meta name="description" content="BTECH In CSE">
-    <meta name="keywords" content="Abishek M, Portfolio, Portfolio Website, Abishek M website, Abishek M avv, Portfolio, CV, Resume,SRMIST KTR Chennai, webarch , IWSC srm,SRM university ,SRM website, DAA, Directorate Of alumni Affairs SRM, SRMUAA, CS50 , CS50 harvard, CS50x, mentor , gwsoc, Hcssoc, google, facebook, FAANG">
+    <meta name="keywords" content="Abishek M, Portfolio, Portfolio Website, Abishek M website, Abishek M avv, Portfolio, CV, Resume">
     <meta name="author" content="Abishek M" />
     <meta property="og:url" content="" />
     <meta property="og:title" content="Portfolio-Abishek M" />
     <meta property="og:description" content="Software Developer, BTECH In CSE " />
 
-    <link rel="manifest" href="./manifest.webmanifest">
+    <!-- <link rel="manifest" href="./manifest.webmanifest"> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171690017-1"></script>
@@ -27,21 +27,17 @@
         function lightmode() {
             var element = document.body;
             element.classList.toggle("light-mode");
-            var x = document.getElementById("myAudio");
-            x.play();
         }
         // dark mode toggle end ------------------------------------
-
-
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'UA-171690017-1');
     </script>
+
     <script src="js/scroll.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./img/abishek.png" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet"> -->
@@ -64,12 +60,6 @@
 
 <body onload="loadinganimate()">
     <div class="loader-wrapper" id="hideDiv">
-        <span class="loader"><span class="loader-inner"> </span></span>
-        <br>
-        <div>
-            <h5 style="margin-left: 5px;"> Loading...</h5>
-        </div>
-
     </div>
 
     <!--Particle Animation-->
@@ -95,7 +85,8 @@
                             <ul class="nav navbar-nav text-center ml-auto">
                                 <li class="nav-item active" data-toggle="collapse" data-target="#navbarid"><a class="nav-link" href="#header">Home</a></li>
                                 <li class="nav-item" data-toggle="collapse" data-target="#navbarid"><a class="nav-link" href="#about">About</a></li>
-                                <li class="nav-item" data-toggle="collapse" data-target="#navbarid"><a class="nav-link" href="./#portfolio">Projects</a></li>
+                                <li class="nav-item" data-toggle="collapse" data-target="#navbarid"><a class="nav-link" href="#experience">Job Experience</a></li>
+                                <li class="nav-item" data-toggle="collapse" data-target="#navbarid"><a class="nav-link" href="#portfolio">Projects</a></li>
                                 <li class="nav-item" data-toggle="collapse" data-target="#navbarid"><a class="nav-link" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -115,25 +106,9 @@
                 </div>
             </div>
             <!-- </div> -->
-            <h2 id="greetings">Hi!, My Name Is</h2>
-            <h1>Abishek M</h1>
-            <h2 class="typeh2">I am a/an <span class="type"></span></h2>
+            <!-- <h2 id="greetings">Hi!, My Name Is</h2> -->
+            <br><br><br><br><br><br><br><br><br><br><h1>Abishek M</h1>
 
-            <script src="js/typed.js"></script>
-            <script>
-                var typed = new Typed('.type', {
-                    strings: ['CSE Student',
-                        'Front End Developer',
-                        'Student Interested in Computer Vision',
-                        'AWS Certified Cloud Practitioner',
-                        'Competetive Programmer'
-                    ],
-                    typeSpeed: 60,
-                    backSpeed: 30,
-                    loop: true,
-                    smartBackspace: true // Default value
-                });
-            </script>
             <div class="header_social">
                 <div class=" text-center">
                     <a class="projects-social grow" href="https://www.linkedin.com/in/abishek-m-918344248/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -203,7 +178,7 @@
                         <p>
                             <ul>
                                 <li>Computer Science And Engineering</li>
-                                <li>CGPA: 7.45</li>
+                                <li>CGPA: 7.49</li>
                             </ul>
                         </p>
                     </div>
@@ -324,6 +299,14 @@
                     <h5 class="badge badge-light awscloud">AWS Certified Cloud Practitioner(2023-26)</h5>
                 </a>
             </div>
+
+            <div class="col-lg-12 text-center">
+                <a href="https://certificate.algoexpert.io/AE-c35fc0a4c5">
+                    <h5 class="badge badge-light awscloud">AlgoExpert Certificate </h5>
+                </a>
+            </div>
+
+            
         </div>
 
         <!--End CounterUp Js-->
@@ -331,14 +314,39 @@
         </div>
     </section>
     <!-- End About Section -->
-    
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="container d-flex justify-content-center align-items-center" style="min-height:80vh;">
+                                <div class="experience-item text-center">
+                                    <img src="./img/portfolio/tcs.png" height="300px" width="180px" style="margin-bottom: 10%;">
+                                    <h4>Tata Consultancy Services</h4>
+                                    <p >Systems Engineer</p>
+                                    <br>
+                                    <h6>April 2025-Present</h6>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Experience -->
+            
     <!-- Projects -->
     <section id="portfolio" class="portfolio">
         <div class="container">
     
           <div class="section-title">
-            <h2>Portfolio</h2>
-            <p>My Projects</p>
+            <h2>Projects</h2>
           </div>
     
           <div class="row">
@@ -410,11 +418,12 @@
                 </div>
               </div>
 
+
               <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                 <div class="portfolio-wrap">
-                  <img src="img/portfolio/climate.png" class="img-fluid" alt="">
+                  <img src="img/portfolio/pres.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Climate Viewer</h4>
+                    <h4>Schedule Manager</h4>
                     <p>Web App</p>
                     <div class="portfolio-links">
                       <a href="projects/project4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link">link</i></a>
@@ -428,8 +437,8 @@
               <div class="portfolio-wrap">
                 <img src="img/portfolio/incomplete.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App </h4>
-                  <p>Mobile App</p>
+                  <h4>Dealer Management App </h4>
+                  <p>Java App</p>
                   <div class="portfolio-links">
                     <a href="projects/project11.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i>link</i></a>
                   </div>
@@ -470,7 +479,7 @@
                 </div>
                 <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
                     <div class="info-box">
-                        <a href="mailto:pranjaypoddar@gmail.com"><i class="fas fa-envelope"></i>
+                        <a href="mailto:abishe.mohan@gmail@gmail.com"><i class="fas fa-envelope"></i>
                             <h3>Email </h3>
                             <p>abishe.mohan@gmail.com</p>
                         </a>
@@ -478,7 +487,7 @@
                 </div>
                 <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
                     <div class="info-box">
-                        <a href="tel:+91-6263804262"> <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+91-"> <i class="fas fa-phone-alt"></i>
                             <h3>Call </h3>
                             <p>+91-9443495994 </p>
                         </a>
@@ -494,7 +503,7 @@
 
         </a>
         <div class="container">
-            <h4 style="text-align: center; ">&copy2023 <span id="credit">Abishek M</span></h4>
+            <h4 style="text-align: center; ">&copy2025 <span id="credit">Abishek M</span></h4>
         </div>
     </section>
 
@@ -503,7 +512,7 @@
             setTimeout(function() {
                 document.getElementById("hideDiv").style.display = "none";
                 document.querySelector("body").style.overflowY = "scroll";
-            }, 4000)
+            }, 0)
         }
     </script>
     <!--JQuery Plugins AND js Files-->
@@ -621,9 +630,7 @@
     <script src="/__/firebase/8.10.1/firebase-analytics.js"></script>
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
-    <audio id="myAudio">
-        <source src="./click.mp3" type="audio/ogg">
-      </audio>
+
 </body>
 </div>
 
